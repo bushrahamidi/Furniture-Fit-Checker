@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is a full-stack JavaScript application designed as a starter template for the Copilot Bootcamp by Slalom. It consists of a React frontend and a Node.js/Express backend, organized in a monorepo structure using npm workspaces.
+DesignFit — Furniture Fit Checker is a full-stack JavaScript application. It consists of a React frontend and a Node.js/Express backend, organized in a monorepo structure using npm workspaces.
 
 ## Architecture
 
@@ -32,7 +32,7 @@ The project follows a monorepo architecture with the following structure:
 - **Integration Tests**: Test backend API endpoints with real HTTP requests using Jest + Supertest
   - **File Extensions**: `*.test.js` or `*.test.ts`
   - **Location**: `packages/backend/__tests__/integration/`
-  - Name integration test files intelligently based on what they test (e.g., `todos-api.test.js` for TODO API endpoints)
+  - Name integration test files intelligently based on what they test (e.g., `catalog-api.test.js` for catalog API endpoints)
 
 - **End-to-End (E2E) Tests**: Test complete UI workflows through browser automation using Playwright
   - **File Extensions**: `*.spec.js` or `*.spec.ts`
@@ -40,7 +40,7 @@ The project follows a monorepo architecture with the following structure:
   - Use Playwright only, and only test with one browser
   - Tests must use Page Object Model (POM) pattern
   - Limit to 5-8 E2E tests covering critical user journeys (focus on quality over quantity) that are isolated and independent from one another
-  - Name E2E test files based on the user journey they test (e.g., `todo-workflow.spec.js`)
+  - Name E2E test files based on the user journey they test (e.g., `catalog-workflow.spec.js`)
 
 ## Getting Started
 

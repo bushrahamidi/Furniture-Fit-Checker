@@ -1,7 +1,7 @@
 {
-  "name": "copilot-bootcamp",
+  "name": "designfit-furniture-fit-checker",
   "version": "1.0.0",
-  "description": "Monorepo with React frontend and Node backend",
+  "description": "DesignFit furniture fit checking application",
   "private": true,
   "workspaces": [
     "packages/*"

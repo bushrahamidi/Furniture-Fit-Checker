@@ -1,7 +1,7 @@
 # Step 2-1: Add Functional Requirements Context
 
 ## Goal
-Create a clear set of functional requirements to expand the TODO app, so that all core features are documented for future development.
+Create a clear set of functional requirements for the application, so that all core features are documented for future development.
 
 ## Instructions
 
@@ -16,7 +16,7 @@ Click the below button to open the **Create Codespace** page in a new tab. Use t
 #### :keyboard: Activity: Ask Copilot to create functional requirements
 
 1. Open the **Copilot** chat panel and switch to **Agent** mode using the dropdown menu.
-2. In the Copilot chat input field, ask Copilot to create a new file at `docs/functional-requirements.md` that lists the core functional requirements you want for your TODO app, for example: the user can add a due date to a task, the task can be edited, the tasks are sorted in a specific order, etc. Remember to make sure that your intent is clear!
+2. In the Copilot chat input field, ask Copilot to create a new file at `docs/functional-requirements.md` that lists the core functional requirements you want for your application. Remember to make sure that your intent is clear!
 3. Ask Copilot to update `copilot-instructions.md` to reference the new `functional-requirements.md` file.
 4. Commit and push your changes.
 

@@ -1,7 +1,7 @@
 # Step 2-3: Add Testing Guidelines
 
 ## Goal
-Document clear testing guidelines for the TODO app to ensure code quality and reliability across the project.
+Document clear testing guidelines for the application to ensure code quality and reliability across the project.
 
 ## Instructions
 
@@ -17,11 +17,11 @@ Document clear testing guidelines for the TODO app to ensure code quality and re
    - **Integration tests**: Use Jest + Supertest to test **backend API endpoints** with real HTTP requests
      - Integration tests should be placed in `packages/backend/__tests__/integration/` directory
      - Integration tests should also use the naming convention `*.test.js` or `*.test.ts`
-     - Name integration test files intelligently based on what they test (e.g., `todos-api.test.js` for TODO API endpoints)
+    - Name integration test files intelligently based on what they test (e.g., `catalog-api.test.js` for catalog API endpoints)
    - **End-to-end (E2E) tests**: Use Playwright (the required framework) to test **complete UI workflows** through browser automation
      - E2E tests should be placed in `tests/e2e/` directory
      - E2E tests should use the naming convention `*.spec.js` or `*.spec.ts`
-     - Name E2E test files based on the user journey they test (e.g., `todo-workflow.spec.js`)
+    - Name E2E test files based on the user journey they test (e.g., `catalog-workflow.spec.js`)
    - **Port Configuration**: Always use environment variables with sensible defaults for port configuration
      - Backend: `const PORT = process.env.PORT || 3030;`
      - Frontend: React's default port is 3000, but can be overridden with `PORT` environment variable
