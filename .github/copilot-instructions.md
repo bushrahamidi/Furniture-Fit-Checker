@@ -9,3 +9,7 @@ This file contains high-level instructions for GitHub Copilot to follow when gen
 The project documentation will be built during the bootcamp sessions.
 
 - [Project Overview](../docs/project-overview.md) - Overview of the project
+- [Development Plan](../docs/DEVELOPMENT_PLAN.md) - MVP architecture, data model, fit engine, and build phases
+- [Coding Guidelines](../docs/coding-guidelines.md) - Coding style, quality principles, and review standards
+- [UI Guidelines](../docs/ui-guidelines.md) - Design tokens, component standards, and accessibility requirements
+- [Testing Guidelines](../docs/testing-guidelines.md) - Testing principles, conventions, and required test frameworks
