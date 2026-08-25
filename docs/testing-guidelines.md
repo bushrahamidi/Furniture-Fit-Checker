@@ -28,7 +28,7 @@ Use Jest and Supertest to test backend API endpoints with real HTTP requests aga
 
 - Integration tests belong in `packages/backend/__tests__/integration/`.
 - Integration test files must use the naming convention `*.test.js` or `*.test.ts`.
-- Name integration test files intelligently based on the behavior or endpoint group they cover. For example, `todos-api.test.js` tests TODO API endpoints.
+- Name integration test files intelligently based on the behavior or endpoint group they cover. For example, `designfit-api.test.js` tests  API endpoints.
 - Verify complete request and response behavior, including status codes, response bodies, validation, and error handling.
 - Keep integration test data independent between tests and reset in-memory state when necessary.
 
@@ -38,7 +38,7 @@ Use Playwright, the required E2E framework, to test complete UI workflows throug
 
 - E2E tests belong in `tests/e2e/`.
 - E2E test files must use the naming convention `*.spec.js` or `*.spec.ts`.
-- Name E2E test files after the user journey they cover. For example, `todo-workflow.spec.js` tests a TODO workflow.
+- Name E2E test files after the user journey they cover. For example, `designfit-workflow.spec.js` tests a  workflow.
 - Playwright tests must use one browser only. Configure and run a single browser project, such as Chromium, to keep the suite focused and reliable.
 - Playwright tests must use the Page Object Model (POM) pattern. Keep selectors and page interactions in page objects so workflows remain readable and changes to the UI are localized.
 - Limit E2E coverage to 5-8 critical user journeys. Focus on happy paths and key edge cases rather than exhaustive coverage.
