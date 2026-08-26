@@ -16,10 +16,6 @@ function validateFitCheck(payload) {
 
   const furnitureErrors = validateFurniture(payload.furniture);
 
-  if (payload.furniture && payload.furniture.type !== 'sofa') {
-    furnitureErrors.type = 'Type must be sofa for this endpoint';
-  }
-
   if (Object.keys(furnitureErrors).length > 0) {
     errors.furniture = furnitureErrors;
   }

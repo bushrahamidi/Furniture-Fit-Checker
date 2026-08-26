@@ -208,7 +208,10 @@ describe('Fit check API', () => {
     });
   });
 
-  it('returns 400 for unsupported furniture type on fit-check', async () => {
+  it.each([
+    ['coffeeTable', 56, 24],
+    ['diningTable', 60, 40],
+  ])('accepts %s as a valid furniture type for fit-check', async (type, width, depth) => {
     const response = await request(app)
       .post('/api/fit-check')
       .send({
@@ -218,20 +221,15 @@ describe('Fit check API', () => {
           width: 159,
         },
         furniture: {
-          name: 'Coffee Table',
-          type: 'coffeeTable',
-          width: 56,
-          depth: 24,
+          name: type === 'coffeeTable' ? 'Coffee Table' : 'Dining Table',
+          type,
+          width,
+          depth,
         },
       });
 
-    expect(response.status).toBe(400);
-    expect(response.body).toEqual({
-      errors: {
-        furniture: {
-          type: 'Type must be sofa for this endpoint',
-        },
-      },
-    });
+    expect(response.status).toBe(200);
+    expect(response.body.furniture.type).toBe(type);
+    expect(response.body.fit).toBeDefined();
   });
 });
